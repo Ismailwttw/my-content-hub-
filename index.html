@@ -26,20 +26,29 @@
         header {
             background-color: var(--primary-green);
             color: white;
-            padding: 1rem 2rem;
+            padding: 1.2rem 2rem;
             display: flex;
-            justify-content: center;
             align-items: center;
+            justify-content: center;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
         .logo-area {
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 12px;
+        }
+        .logo-img {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid white;
+            background: white;
         }
         .logo-area h1 {
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             font-weight: 600;
+            letter-spacing: 0.5px;
         }
         .hero {
             background-color: var(--primary-green);
@@ -109,27 +118,6 @@
             color: var(--text-light);
             font-size: 0.95rem;
         }
-        .work-card {
-            background: #ffffff;
-            border-radius: 12px;
-            overflow: hidden;
-            margin-bottom: 1.5rem;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-            border: 1px solid #d4eddf;
-        }
-        .work-content {
-            padding: 1.5rem;
-        }
-        .badge {
-            display: inline-block;
-            background: #e8f5ec;
-            color: var(--primary-green);
-            padding: 0.2rem 0.6rem;
-            border-radius: 10px;
-            font-size: 0.8rem;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
         .contact-card {
             background: white;
             border-radius: 12px;
@@ -157,6 +145,8 @@
 
     <header>
         <div class="logo-area">
+            <!-- এখানে logo.jpg ফাইলটি কল করা হয়েছে -->
+            <img src="logo.jpg" alt="RYAA Logo" class="logo-img">
             <h1>RYAA Digital Hub</h1>
         </div>
     </header>
